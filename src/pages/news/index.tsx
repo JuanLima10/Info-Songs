@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { GetStaticProps } from "next"
+import { GetServerSideProps } from "next"
 
 import { WebHeader } from "../../components/Header"
 import { MobileMenu, WebMenu } from "../../components/Menu"
@@ -51,7 +51,7 @@ export default function News({ news }: NewsProps) {
 }
 
 // GET
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const { data } = await api.get('news/index.js')
   const news = data.news.map((n: News) => {
     return {
@@ -67,7 +67,6 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       news,
-    },
-    revalidate: 60*60*8,
+    }
   }
 }
