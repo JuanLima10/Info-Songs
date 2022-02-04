@@ -135,7 +135,7 @@
     }
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1360px) {
     .top{
         
         h1{
@@ -170,16 +170,6 @@
     }
 }
 
-@media screen and (max-width: 283px) {
-    .top{
-        
-        h1{
-            font-size: 2rem;
-        }
-    }
-}
-
-
 @media screen and (max-width: 370px) {
     .top{
 
@@ -208,4 +198,13 @@
             }
         }
     }
-  }
+}
+
+@media screen and (max-width: 283px) {
+    .top{
+        
+        h1{
+            font-size: 2rem;
+        }
+    }
+}

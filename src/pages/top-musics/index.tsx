@@ -31,7 +31,7 @@ export default function TopMusics({ month }: TopMusicsProps) {
       <WebMenu/>
       <MobileMenu/>
       <div className={ Style.top }>
-        <h1>Racking Artistas</h1>
+        <h1>Racking Musicas</h1>
         <h2>No Mês:</h2>
         <div className={ Style.topContent }>
             <ol>
