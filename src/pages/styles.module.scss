@@ -378,6 +378,10 @@
 @media screen and (max-width: 540px) {
     .home{
 
+        h1{
+            display: none;
+        }
+
         .homeContent{
 
             .homeNews{
