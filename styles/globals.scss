@@ -1,0 +1,64 @@
+html{
+  font-family: 'Libre Franklin', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #161616;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #767674;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.keen-slider{
+  position: relative;
+  margin-left: 2rem;
+}
+
+.mobileBtn{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 0.6rem;
+
+  img{
+    width: 9.375rem;
+    margin: -2rem 0 -2rem 0;
+  }
+
+  i{
+    color: #ffffff;
+  }
+
+  h3{
+    color: #ffffff;
+    margin: 0.8rem 0;
+  }
+
+}
+
+@media screen and (max-width: 1390px) {
+  .keen-slider{
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  html{
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  html{
+    font-size: 74%;
+  }
+}

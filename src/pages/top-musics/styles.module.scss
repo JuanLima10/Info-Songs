@@ -1,0 +1,211 @@
+.top{
+    max-width: 1080px;
+    margin: 0 auto;
+
+    h1{
+        font-size: 4rem;
+        color: #ffffff;
+        margin-left: 2rem;
+
+    }
+
+    h2{
+        color: #ffffff;
+        margin-left: 2.2rem;
+        margin-bottom: 2.2rem;
+
+    }   
+    .topContent{
+
+        ol{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+
+            list-style: none;
+            counter-reset: my-awesome-counter;
+
+            .topInfo{
+                display: flex;
+                text-decoration: none;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 2rem;
+
+                padding: 1rem;
+                background: #202020;
+                border-radius: 10px;
+
+                -moz-transition: all 0.4s;
+                -webkit-transition: all 0.4s;
+                transition: all 0.4s;
+
+                li{
+                    font-size: 4rem;
+                    counter-increment: my-awesome-counter;
+                    color: #ffffff;
+                }
+
+                li::before {
+                    content: counter(my-awesome-counter);
+                }
+
+                
+
+                img{
+                    width: 140px;
+                    height: 140px;
+                    max-width: 100%;
+                    border-radius: 50%;
+                    margin: 1rem 0 0 0;
+                }
+
+                .week{
+                    margin-bottom: 1.956rem;
+                }
+
+                .topInfoTexts{
+                    p{
+                        max-width: 200px;
+                        color: #ffffff;
+                        margin: 0rem 0rem 0.4rem;
+                    }
+
+                    span{
+                        color: #767674;
+                    }
+                }
+            }
+
+            .topInfo:hover{
+                background: #000000;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .top{
+
+        h1{
+            margin-left: 0rem;
+            text-align: center;
+        }
+
+        h2{
+            margin-left: 0rem;
+            text-align: center;
+        }
+
+        .topContent{
+
+            ol{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: -40px;
+
+                .topInfo{
+                    flex-direction: column;
+                    gap: 0rem;
+
+                    li{
+                        display: none;
+                    }
+
+                    img{
+                        padding: 0rem 5rem;
+                    }
+
+                    .topInfoTexts{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: -3rem;
+                        margin-bottom: 1rem;
+
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .top{
+        
+        h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .topContent{
+
+            ol{
+
+                .topInfo{
+
+                    img{
+                        width: 160px;
+                        height: 160px;
+                        margin-bottom: 5rem;
+                    }
+
+                    .week{
+                        margin-bottom: 5rem;
+                    }
+
+                    li{
+                        width: 160px;
+                        height: 160px;
+                        margin: 0 0 4.1rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 283px) {
+    .top{
+        
+        h1{
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    .top{
+
+        .topContent{
+
+            ol{
+
+                .topInfo{
+
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        margin-bottom: 2rem;
+                    }
+
+                    .week{
+                        margin-bottom: 2rem;
+                    }
+
+                    li{
+                        width: 100px;
+                        height: 105px;
+                        margin: 0 0 4.2rem 0;
+                    }
+                }
+            }
+        }
+    }
+  }

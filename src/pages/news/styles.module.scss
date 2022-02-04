@@ -1,0 +1,115 @@
+.news{
+    max-width: 1080px;
+    margin: 0 auto;
+
+    h1{
+        font-size: 4rem;
+        color: #ffffff;
+        margin-left: 2rem;
+
+    }
+    .newsContent{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        margin-left: 2rem;
+
+        .newsInfo:nth-child(19){
+            display: none;
+        }
+
+        .newsInfo:nth-child(20){
+            display: none;
+        }
+
+        .newsInfo{
+            text-decoration: none;
+            background: #202020;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            margin: 1rem;
+            
+            -moz-transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+
+            h2{
+                text-align: center;
+                color: #ffffff;
+                padding: 0.5rem;
+                max-width: 450px;
+                
+            }
+
+            p{
+                font-size: 0.9rem;
+                font-weight: bold;
+                text-align: center;
+                color: #767676;
+            }
+
+            img{
+                max-width: 100%;
+                border-radius: 10px;
+                -moz-transition: all 0.4s;
+                -webkit-transition: all 0.4s;
+                transition: all 0.4s;
+            }
+        }
+
+        .newsInfo:hover{
+            cursor: pointer;
+            border: 1px solid #ffffff;
+
+
+            img{
+                -moz-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .news{
+
+        h1{
+            margin-left: 0rem;
+            text-align: center;
+    
+        }
+
+        .newsContent{
+            grid-template-columns: repeat(1, 1fr);
+            place-items: center;
+            margin-left: 0rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .news{
+
+        h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .news{
+
+        .newsContent{
+
+            .newsInfo:hover{
+    
+                img{
+                    -moz-transform: none;
+                    -webkit-transform: none;
+                    transform: none;
+                }
+            }
+        }
+    }
+}

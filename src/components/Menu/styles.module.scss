@@ -1,0 +1,92 @@
+.webMenu{
+    max-width: 1440px;
+    margin: 0 auto;
+    
+    .webMenuContent{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem;
+
+        .title{
+            color: #ffffff;
+        }
+
+        .headerMenu{
+
+            a{
+                color: #ffffff;
+                text-decoration: none;
+                margin: -1rem 0 0 0;
+            }
+    
+            a:hover{
+                color: #767674;
+                transition: all 0.4s;
+            }
+        }
+
+        .subMenu{
+
+            a{
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin: -0.5rem 0 0 0;
+            
+                color: #767674;
+                text-decoration: none;
+                
+                i{
+                    margin: -0.2rem 0 0 0;
+                }
+            }
+    
+            a:hover{
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.mobileMenu{
+    display: none;
+
+    .mobileMenuContent{
+
+        .menuButton{
+            
+            i{
+                position: fixed;
+                cursor: pointer;
+                bottom: 1rem;
+                right: 1rem;
+
+                padding: 1rem 1.05rem;
+                text-decoration: none;
+                
+                font-size: 1.4rem;
+                color: #161616;
+                background: #ffffff;
+                border-radius: 50%;
+                box-shadow: 
+                rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1145px){
+    .webMenu{
+        display: none;
+    }
+
+    .mobileMenu{
+        display: block;
+    }
+}

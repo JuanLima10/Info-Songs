@@ -1,0 +1,205 @@
+.top{
+    max-width: 1080px;
+    margin: 0 auto;
+
+    h1{
+        font-size: 4rem;
+        color: #ffffff;
+        margin-left: 2rem;
+
+    }
+
+    h2{
+        color: #ffffff;
+        margin-left: 2.2rem;
+
+    }
+    .topContent{
+
+        ol{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            place-items: center;
+
+            list-style: none;
+            counter-reset: my-awesome-counter;
+
+            .topInfo{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+
+                li{
+                    width: 180px;
+                    height: 180px;
+                    max-width: 100%;
+
+                    position: absolute;
+                    font-size: 4rem;
+                    counter-increment: my-awesome-counter;
+                    
+                    color: #ffffff;
+                    background-color: #00000080;
+                    border-radius: 50%;
+                    margin-bottom: 5.1rem;
+
+                    -moz-transition: all 0.4s;
+                    -webkit-transition: all 0.4s;
+                    transition: all 0.4s;
+                }
+
+                li::before {
+                    content: counter(my-awesome-counter);
+                }
+
+                li:hover{
+                    background-color: #00000020;
+                }
+
+                p{
+                    max-width: 200px;
+                    text-align: center;
+                    color: #ffffff;
+                    margin-top: -1rem;
+                    margin-bottom: 3rem;
+                }
+
+                img{
+                    width: 180px;
+                    height: 180px;
+                    max-width: 100%;
+                    border-radius: 50%;
+                    margin-bottom: 2rem;
+                }
+
+                .week{
+                    margin-bottom: 1.956rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .top{
+
+        h1{
+            margin-left: 0rem;
+            text-align: center;
+        }
+
+        h2{
+            margin-left: 0rem;
+            text-align: center;
+        }
+
+        .topContent{
+
+            ol{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: -2.188rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .top{
+        
+        h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .topContent{
+
+            ol{
+
+                .topInfo{
+
+                    img{
+                        width: 160px;
+                        height: 160px;
+                        margin-bottom: 5rem;
+                    }
+
+                    .week{
+                        margin-bottom: 5rem;
+                    }
+
+                    li{
+                        width: 160px;
+                        height: 160px;
+                        margin: 0 0 4.1rem 0;
+                    }
+
+                    p{
+                        margin-top: -4rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 370px) {
+    .top{
+
+        .topContent{
+
+            ol{
+
+                .topInfo{
+
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        margin-bottom: 2rem;
+                    }
+
+                    .week{
+                        margin-bottom: 2rem;
+                    }
+
+                    li{
+                        width: 100px;
+                        height: 105px;
+                        margin: 0 0 4.2rem 0;
+                    }
+
+                    p{
+                        margin-top: -1rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 283px) {
+    .top{
+        
+        h1{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 220px) {
+    .top{
+
+        .topContent{
+
+            ol{
+                margin-left: -50%;
+            }
+        }
+    }
+}

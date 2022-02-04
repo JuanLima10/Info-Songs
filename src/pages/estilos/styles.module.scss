@@ -1,0 +1,80 @@
+.estilos{
+    max-width: 1080px;
+    margin: 0 auto;
+
+    h1{
+        font-size: 4rem;
+        color: #ffffff;
+        margin-left: 2rem;
+
+    }
+    .estilosContent{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-left: 2rem;
+        
+        a{
+            text-decoration: none;
+        }
+
+        p{
+            text-align: center;
+            padding: 0.6rem 0.8rem;
+            color: #ffffff;
+            background: #4a4849;
+            border-radius: 50px;
+
+            -moz-transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+        }
+
+        p:hover{
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media screen and (max-width: 1145px){
+    .estilos{
+    
+        h1{
+            text-align: center;
+            margin-left: 0rem;
+        }
+
+        .estilosContent{
+            margin: 0rem 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .estilos{
+
+        h1{
+            font-size: 2.4rem;
+        }
+
+        .estilosContent{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: 385px){
+    .estilos{
+
+        h1{
+            font-size: 2rem;
+        }
+
+        .estilosContent{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+        }
+    }
+}

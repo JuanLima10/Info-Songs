@@ -1,0 +1,117 @@
+.hotspot{
+    max-width: 1080px;
+    margin: 0 auto;
+
+    h1{
+        font-size: 4rem;
+        color: #ffffff;
+        margin-left: 2rem;
+
+    }
+    .hotspotContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+
+        .hotspotInfo{
+            display: flex;
+            gap: 1rem;
+            margin: 1rem;
+
+            text-decoration: none;
+            background: #202020;
+            border-radius: 10px;
+            border: 1px solid transparent;
+
+            -moz-transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+
+            img{
+                width: 400px;
+                max-width: 100%;
+                border-radius: 10px;
+            }
+
+            .hotspotInfoTexts{
+
+                h2{
+                    color: #ffffff;
+                    max-width: 300px;
+                }
+                
+                h5{
+                    max-width: 300px;
+                    color: #ffffff;
+                    margin: -0.6rem 0 0 0;
+                    
+                }
+    
+                p{
+                    max-width: 300px;
+                    font-size: 1.2rem;
+                    color: #ffffff;
+                    padding: 0.5rem 1rem 0.5rem 0;
+                }
+            }
+        }
+
+        .hotspotInfo:hover{
+            cursor: pointer;
+            border: 1px solid #ffffff;
+        }
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .hotspot{
+
+        h1{
+            text-align: center;
+            margin-left: 0rem;
+        }
+
+        .hotspotContent{
+
+            .hotspotInfo{
+                flex-direction: column;
+            
+                .hotspotInfoTexts{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                h2{
+                    text-align: center;
+                }
+
+                p{
+                    text-align: center;
+                    margin-left: 1rem;
+                    padding: 0rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .hotspot{
+        
+        h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 283px) {
+    .hotspot{
+        
+        h1{
+            font-size: 2rem;
+        }
+    }
+}
