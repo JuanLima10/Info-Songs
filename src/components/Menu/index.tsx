@@ -25,9 +25,9 @@ export const WebMenu = () => {
                 </div>
                 <h2 className={ Style.title }>Top</h2>
                 <div className={ Style.subMenu }>
-                  <a href="/top-musics"><i className="fas fa-headphones-alt" aria-hidden></i><p>Racking Musicas</p></a>
-                  <a href="/top-artists"><i className="fas fa-music" aria-hidden></i><p>Racking Artistas</p></a>
-                  <a href="top-albuns"><i className="fas fa-compact-disc" aria-hidden></i><p>Racking Álbuns</p></a>
+                  <a href="/top-musics"><i className="fas fa-headphones-alt" aria-hidden></i><p>Ranking Musicas</p></a>
+                  <a href="/top-artists"><i className="fas fa-music" aria-hidden></i><p>Ranking Artistas</p></a>
+                  <a href="top-albuns"><i className="fas fa-compact-disc" aria-hidden></i><p>Ranking Álbuns</p></a>
                 </div>
             </div>
         </div>
@@ -64,9 +64,9 @@ export const MobileMenu = () => {
       <Divider />
       <List sx={{ marginLeft: 2 }}>
         <a className="mobileBtn" href="/estilos"><i className="fas fa-list" aria-hidden></i><h3>Estilos</h3></a>
-        <a className="mobileBtn" href="/top-musics"><i className="fas fa-headphones-alt" aria-hidden></i><h3>Racking Musicas</h3></a>
-        <a className="mobileBtn" href="/top-artists"><i className="fas fa-music" aria-hidden></i><h3>Racking Artistas</h3></a>
-        <a className="mobileBtn" href="top-albuns"><i className="fas fa-compact-disc" aria-hidden></i><h3>Racking Álbuns</h3></a>      
+        <a className="mobileBtn" href="/top-musics"><i className="fas fa-headphones-alt" aria-hidden></i><h3>Ranking Musicas</h3></a>
+        <a className="mobileBtn" href="/top-artists"><i className="fas fa-music" aria-hidden></i><h3>Ranking Artistas</h3></a>
+        <a className="mobileBtn" href="top-albuns"><i className="fas fa-compact-disc" aria-hidden></i><h3>Ranking Álbuns</h3></a>      
       </List>
     </Box>
   );

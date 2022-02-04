@@ -29,7 +29,7 @@ export default function TopArtists({ month }: TopArtistsProps) {
       <WebMenu/>
       <MobileMenu/>
       <div className={ Style.top }>
-        <h1>Racking Artistas</h1>
+        <h1>Ranking Artistas</h1>
         <h2>No Mês:</h2>
         <div className={ Style.topContent }>
             <ol>

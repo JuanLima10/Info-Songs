@@ -28,7 +28,7 @@ export default function TopAlbuns({ month }: TopAlbunsProps) {
       <WebMenu/>
       <MobileMenu/>
       <div className={ Style.top }>
-        <h1>Racking Álbuns</h1>
+        <h1>Ranking Álbuns</h1>
         <h2>No Mês:</h2>
         <div className={ Style.topContent }>
             <ol>
