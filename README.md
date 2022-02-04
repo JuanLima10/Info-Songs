@@ -6,7 +6,7 @@
 </br>
 
 <div align="center"> 
-<a href="https://github.com/JuanLima10/InfoSongs">--> Veja a demonstração <--</a>
+<a href="https://info-songs.vercel.app">--> Veja a demonstração <--</a>
 </div>
 
 </br>

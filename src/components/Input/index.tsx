@@ -49,7 +49,7 @@ export const SearchInput = ({
               {
                 searchArtist.map((sa: Search) => {
                   return(
-                    <a href={`http://localhost:3000/artist/${sa.url}`} key={sa.id}>
+                    <a href={`https://info-songs.vercel.app/artist/${sa.url}`} key={sa.id}>
                       <p>{sa.band}</p>
                     </a>
                   )
