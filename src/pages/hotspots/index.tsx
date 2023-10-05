@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { GetStaticProps } from "next"
 
+import { Footer } from "../../components/Footer"
 import { WebHeader } from "../../components/Header"
 import { MobileMenu, WebMenu } from "../../components/Menu"
-import { Footer } from "../../components/Footer"
 
 import api from "../api/api"
 import Style from './styles.module.scss'
@@ -63,11 +63,10 @@ export const getStaticProps: GetStaticProps = async () => {
       id: hs.id,
       title: hs.title,
       date_fmt: hs.date_fmt,
-      link: hs.link,
+      link: `https://www.vagalume.com.br/${hs.link}`,
       descr: hs.descr,
-      pic_src: hs.pic_src,
+      pic_src: hs.pic_src.replace('https://s2.vagalume.com', 'https://www.vagalume.com.br/'),
       type: hs.type,
-      musicID: hs.musicID,
     }
   })
 
